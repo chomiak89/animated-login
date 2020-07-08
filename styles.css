@@ -64,12 +64,45 @@ p {
 
 /* ------------------------------------------------- */
 
+.container {
+  width: 60%;
+  margin: 0 auto;
+  height: 60vh;
+  margin-top: 150px;
+  overflow: hidden;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.side-image {
+  flex: 1;
+  margin-left: 50px;
+}
+.form-container {
+  flex: 1;
+  align-self: center;
+  margin-left: 100px;
+}
+
+.form-container h3 {
+  margin-bottom: 50px;
+}
+
+.side-image img {
+  width: 80%;
+}
+
+.field-container {
+  margin: 22px 0 0 0;
+}
+
 input {
-  background-color: rgba(50, 50, 50, 0.2);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
   position: relative;
   z-index: 2;
-  border: none;
-  margin-top: 30px;
+
+  /* margin-top: 30px; */
   padding: 10px 5px;
 }
 
@@ -77,21 +110,24 @@ input:focus {
   outline: none;
 }
 
-.form-container {
+/* .form-container {
   width: 40%;
   margin: 100px auto 0 auto;
-}
+} */
 
 .test-selector-1,
 .test-selector-2 {
   position: relative;
+  border-top: 1px solid black;
+  width: 200px;
 }
 .test-selector-1::before {
   content: "Username";
-  transition: transform 300ms;
+  transition: transform 200ms;
   display: inline-block;
   position: relative;
   top: -28px;
+  left: 18px;
 }
 
 #username-input:focus + .test-selector-1::before {
@@ -100,10 +136,11 @@ input:focus {
 
 .test-selector-2::before {
   content: "Password";
-  transition: transform 300ms;
+  transition: transform 200ms;
   display: inline-block;
   position: relative;
   top: -28px;
+  left: 18px;
 }
 
 #password-input:focus + .test-selector-2::before {
