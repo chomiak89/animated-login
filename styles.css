@@ -44,7 +44,7 @@ li:hover::after {
   width: 100%;
 }
 
-a {
+.navigation-container a {
   text-transform: uppercase;
   transition: color 200ms;
   font-weight: bold;
@@ -123,7 +123,7 @@ input:focus {
 }
 .test-selector-1::before {
   content: "Username";
-  transition: transform 200ms;
+  transition: transform 200ms, font-size 200ms;
   display: inline-block;
   position: relative;
   top: -28px;
@@ -132,11 +132,12 @@ input:focus {
 
 #username-input:focus + .test-selector-1::before {
   transform: translateY(-25px);
+  font-size: 0.9em;
 }
 
 .test-selector-2::before {
   content: "Password";
-  transition: transform 200ms;
+  transition: transform 200ms, font-size 200ms;
   display: inline-block;
   position: relative;
   top: -28px;
@@ -145,4 +146,18 @@ input:focus {
 
 #password-input:focus + .test-selector-2::before {
   transform: translateY(-25px);
+  font-size: 0.9em;
+}
+
+button {
+  width: 200px;
+  padding: 5px 0;
+  margin-top: 15px;
+}
+
+.container a {
+  display: block;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-top: 20px;
 }
