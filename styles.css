@@ -127,7 +127,7 @@ input:focus {
   display: inline-block;
   position: relative;
   top: -28px;
-  left: 18px;
+  left: 30px;
 }
 
 #username-input:focus + .test-selector-1::before {
@@ -141,7 +141,7 @@ input:focus {
   display: inline-block;
   position: relative;
   top: -28px;
-  left: 18px;
+  left: 30px;
 }
 
 #password-input:focus + .test-selector-2::before {
