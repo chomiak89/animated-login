@@ -77,6 +77,9 @@ p {
 .side-image {
   flex: 1;
   margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form-container {
   flex: 1;
@@ -134,7 +137,7 @@ input:focus {
 .js-field-active.test-selector-1::before,
 #password-input:focus + .test-selector-2::before,
 .js-field-active.test-selector-2::before {
-  transform: translateY(-25px);
+  transform: translateY(-25px) translateX(-7px);
   font-size: 0.9em;
 }
 
